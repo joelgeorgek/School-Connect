@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChangeProfilePic"
+    android:background="#ffffff">
+
+    <!--
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_margin="30dp"
+        android:text="Edit Profile Picture"
+        android:gravity="center"
+        android:layout_above="@id/settings_profile_imageview"/>
+    -->
+    <TextView
+        android:id="@+id/settings_profile_trackitid_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="trackit id"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/settings_profile_imageview"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_person_black_300dp"
+        android:layout_below="@id/settings_profile_trackitid_textview"
+        />
+
+    <ImageView
+        android:id="@+id/settings_profile_imageview2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:background="#000000"
+        android:alpha="0.1"
+        android:layout_margin="10dp"
+        android:src="@drawable/circle_crop"
+        android:layout_below="@id/settings_profile_trackitid_textview"/>
+    <ImageView
+        android:id="@+id/settings_profile_imageview3"
+        android:layout_width="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/circle_crop"
+        android:layout_below="@id/settings_profile_trackitid_textview"/>
+
+    <TextView
+        android:id="@+id/followers_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/settings_profile_imageview"
+        android:layout_margin="50dp"
+        android:layout_alignParentStart="true"
+        android:textSize="20dp"
+        android:text="Followers"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/followers_textview"
+        android:layout_marginEnd="50dp"
+        android:text="Followings"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/follower_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/followers_textview"
+        android:layout_marginStart="90dp"
+        android:textSize="20dp"
+        android:layout_marginTop="-45dp"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/following_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/followers_textview"
+        android:layout_marginEnd="90dp"
+        android:textSize="20dp"
+        android:layout_marginTop="-45dp"
+        android:text="0" />
+
+
+</RelativeLayout>
